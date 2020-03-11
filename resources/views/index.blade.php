@@ -29,7 +29,7 @@
                   function frame() {
                     if (width >= 100) {
                       clearInterval(id);
-                      window.location.replace("/index2")
+                      window.location.replace("/main")
                     } else {
                       width++; 
                       elem.style.width = width + '%'; 

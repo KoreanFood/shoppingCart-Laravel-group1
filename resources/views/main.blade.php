@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
      
-      body {font-family: Arial, Helvetica, sans-serif;}
+      body {font-family: Arial, Helvetica, sans-serif; background-image: url({{ asset('image/bk4.jpg') }});
+      }
       * {box-sizing: border-box;}
       
       /* Full-width input fields */
@@ -118,13 +119,14 @@
         .cancelbtn, .signupbtn {
            width: 100%;
         }
+
       }</style>
     <title>Hello, world!</title>
   </head>
   <body>
      
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-                <img src="{{asset('image/1.jpg')}}" class="img-fuild rounded-circle" alt=""style="width: 50px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                <img src="image/1.jpg" class="img-fuild rounded-circle" alt=""style="width: 50px;">
                 <a class="navbar-brand" href="#"></a>&nbsp;
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -133,22 +135,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="{{ url('index2') }}">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link" href="{{ url('viewlist') }}">Menu</a>
                       </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle bg-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        More
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="checkout.html">Checkout</a>
-                        <a class="dropdown-item" href="delivery.html">Delivery</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href=""></a>
-                      </div>
-                    </li>
+                    
                     <li class="nav-item">
                             <a class="nav-link" href="contact us.html" >Contact us</a>
                           </li>
@@ -158,7 +150,6 @@
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button style="width: auto;" class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
                   </form> 
-                 <button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Sign Up</button>
                 </div>
               </nav>
 
@@ -172,13 +163,13 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="{{asset('image/bnr3.jpg')}}" class="d-block w-100" alt="...">
+                            <img src="image/bnr3.jpg" class="d-block w-100 h-50" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="{{asset('image/bnr5.jpg')}}"class="d-block w-100" alt="...">
+                            <img src="image/bnr5.jpg"class="d-block w-100 h-50" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="{{asset('image/bnr5.jpg')}}"class="d-block w-100" alt="...">
+                            <img src="image/bnr6.jpg"class="d-block w-100 h-50" alt="...">
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -204,49 +195,15 @@
         <div class="container-fluid" >
             <div class="w3-animate-zoom">
             <div class="row" style="padding:50px">
-                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="{{asset('image/fried chicken.jpg')}}" class="img-fuild" width="250" height="250" alt=""></button></form></div>
-                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="{{asset('image/hfnnc1.jpg')}}" class="img-fuild" width="250" height="250" alt=""></button></form></div>
-                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="{{asset('image/bnr4.jpg')}}" class="img-fuild" width="250" height="250" alt=""></button></form></div>
+                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/fried chicken.jpg" class="img-fuild" width="250" height="250" alt=""></button></form></div>
+                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/hfnnc1.jpg" class="img-fuild" width="250" height="250" alt=""></button></form></div>
+                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/bnr4.jpg" class="img-fuild" width="250" height="250" alt=""></button></form></div>
             </div>
-         </div>
+            </div>
             <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content" action="/action_page.php">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="email"><b>Name</b></label>
-      <input type="text" placeholder="Enter Name" name="name" required>
-
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-
-      <label for="email"><b>Phone No.</b></label>
-      <input type="text" placeholder="Enter Phoneno" name="phoneno" required>
-
-      <label for="email"><b>Address</b></label>
-      <input type="text" placeholder="Enter Address" name="address" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
-    </div>
-  </form>
-</div>
+             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> 
+         </div>
+         </div>
 
 <script>
 // Get the modal
@@ -261,15 +218,15 @@ window.onclick = function(event) {
 </script>
 
              <div class="row" style="left:0;bottom: 0;">
-                <div class="col-md-12 bg-info">
-                        한옥 <br>
+                <div class="col-md-12 bg-warning">
+                        Korean Food <br>
                         16, Jalan Seri Putra 1, 
                         Bandar Putra, 
                         81000 Kulai, Johor.<br>
                         07-660 0628<br>
                         www.nsit.com.my
                         <div style="float: right;">
-                          <img src="{{asset('image/logo.png')}}" alt="" width="100px">
+                          <img src="image/logo.png" alt="" width="10px">
                       </div>
                 </div>
               </div>
