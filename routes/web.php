@@ -19,6 +19,10 @@ Route::get('/index', function () {
     return view('index');
 });
 
+Route::get('/paywithpaypal', function () {
+    return view('paywithpaypal');
+});
+
 Route::get('/viewlist', function () {
     return view('viewlist');
 });
