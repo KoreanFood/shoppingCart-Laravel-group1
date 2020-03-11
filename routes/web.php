@@ -19,8 +19,8 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/index2', function () {
-    return view('index2');
+Route::get('/viewlist', function () {
+    return view('viewlist');
 });
 
 Route::get('/main', function () {
