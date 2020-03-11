@@ -27,7 +27,7 @@ Copy this code in your html file.
     <div class="container">
      
         <p class="h2 text-center">Edit Product</p>
-        <form action="{{ route('addProduct.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('update.product') }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             @foreach($products as $product)
 
