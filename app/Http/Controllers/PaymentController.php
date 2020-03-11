@@ -22,7 +22,6 @@ use Session;
 use URL;
 use Notification;
 
-
 class PaymentController extends Controller
 {
     private $_api_context;
@@ -55,7 +54,7 @@ class PaymentController extends Controller
 
         $item_1 = new Item();
 
-        $item_1->setName('Item 1') /** item name **/
+        $item_1->setName($request->get('amount')) /** item name **/
             ->setCurrency('USD')
             ->setQuantity(1)
             ->setPrice($request->get('amount')); /** unit price **/
@@ -158,11 +157,10 @@ class PaymentController extends Controller
 
             Session::put('success', 'Payment success(TESTING)');
             //add update record for cart
-            $email='davidcjc2000@gmail.com';
+            $email='craxin1234567890@gmail.com';
             Notification::route('mail',$email)->notify(new \App\Notifications\orderPaid($email));
-
-
-            return Redirect::to('NSS_all');
+           
+            return Redirect::to('viewlist');
 
         }
 
