@@ -23,24 +23,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="{{ url('main') }}">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link" href="{{ url('viewlist') }}">Menu</a>
                       </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle bg-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         More
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="checkout.html">Checkout</a>
-                        <a class="dropdown-item" href="delivery.html">Delivery</a>
+                        <a class="dropdown-item" href=""></a>
+                        <a class="dropdown-item" href=""></a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href=""></a>
                       </div>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="contact us.html">Contact us</a>
+                            <a class="nav-link" href="{{ url('contact  us') }}">Contact us</a>
                           </li>
                           <form class="form-inline my-2 my-lg-0" method="post" action="{{ route('search.product') }} ">
             {{ csrf_field() }}

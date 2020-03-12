@@ -22,6 +22,9 @@ Route::get('/index', function () {
 Route::get('/paywithpaypal', function () {
     return view('paywithpaypal');
 });
+Route::get('/contact us', function () {
+    return view('contact us');
+});
 
 Route::get('/viewlist', function () {
     return view('viewlist');

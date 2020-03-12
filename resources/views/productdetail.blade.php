@@ -31,7 +31,7 @@
         </div>
         <div class="row" >
             <div class="col-md-12 bg-info"  >
-                    NSIT Academy <br>
+                    Korean Food <br>
                     No.16, Jalan Sri Putra 1,
                     Bandar Putra, 
                     81000 Kulai, Johor <br>

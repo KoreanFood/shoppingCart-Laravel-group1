@@ -135,14 +135,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="{{ url('index2') }}">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="{{ url('main') }}">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('viewlist') }}">Menu</a>
                       </li>
                     
                     <li class="nav-item">
-                            <a class="nav-link" href="contact us.html" >Contact us</a>
+                            <a class="nav-link" href="{{ url('contact us') }}" >Contact us</a>
                           </li>
                   </ul>
                  
