@@ -28,14 +28,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('viewlist') }}">Menu</a>
                       </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle bg-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        More
-                      </a>
-                     
-                    </li>
+                    
                     <li class="nav-item">
-                            <a class="nav-link" href="{{ url('contact  us') }}">Contact us</a>
+                            <a class="nav-link" href="{{ url('contact-us') }}">Contact us</a>
                           </li>
                           <form class="form-inline my-2 my-lg-0" method="post" action="{{ route('search.product') }} ">
             {{ csrf_field() }}
@@ -83,7 +78,7 @@
                 <div class="col-md-1"></div>
       
                 <div class="row" style="left:0;bottom: 0;">
-                    <div class="col-md-12 bg-warnning">
+                    <div class="col-md-12 bg-warning">
                             Korean Food <br>
                             16, Jalan Seri Putra 1, 
                             Bandar Putra, 
