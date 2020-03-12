@@ -12,7 +12,6 @@
                             </div>
                             <input type="hidden" id="price" value="{{$product->price}}">
                             <input type="hidden" id="amount" name="amount" value="">
-                            <input type="hidden" id="amount" name="amount" >
                             <script>
                             function cal(){
                                 document.getElementById("amount").value=document.getElementById("qty").value*document.getElementById("price").value;
