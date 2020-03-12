@@ -11,7 +11,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
                 <img src="image/1.jpg" class="img-fuild rounded-circle" alt=""style="width: 50px;">
                 <a class="navbar-brand" href="#"></a>&nbsp;
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="{{ url('viewlist') }}">Contact us</a>
+                            <a class="nav-link" href="{{ url('contact us') }}">Contact us</a>
                           </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">

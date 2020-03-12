@@ -13,7 +13,7 @@
   </head>
  
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
                 <img src="image/1.jpg" class="img-fuild rounded-circle" alt=""style="width: 50px;">
                 <a class="navbar-brand" href="#"></a>&nbsp;
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,12 +32,7 @@
                       <a class="nav-link dropdown-toggle bg-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         More
                       </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href=""></a>
-                        <a class="dropdown-item" href=""></a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href=""></a>
-                      </div>
+                     
                     </li>
                     <li class="nav-item">
                             <a class="nav-link" href="{{ url('contact  us') }}">Contact us</a>
@@ -88,7 +83,7 @@
                 <div class="col-md-1"></div>
       
                 <div class="row" style="left:0;bottom: 0;">
-                    <div class="col-md-12 bg-info">
+                    <div class="col-md-12 bg-warnning">
                             Korean Food <br>
                             16, Jalan Seri Putra 1, 
                             Bandar Putra, 
