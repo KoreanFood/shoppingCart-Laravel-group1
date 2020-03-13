@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->string('categoryID');
             $table->timestamps();
         });
+        
     }
 
     /**

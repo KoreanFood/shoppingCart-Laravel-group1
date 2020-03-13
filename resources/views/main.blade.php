@@ -126,13 +126,13 @@
   <body>
      
         <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-                <img src="image/1.jpg" class="img-fuild rounded-circle" alt=""style="width: 50px;">
+                <img src="image/1.png" class="img-fuild rounded-circle" alt=""style="width: 50px;">
                 <a class="navbar-brand" href="#"></a>&nbsp;
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="{{ url('main') }}">Home <span class="sr-only">(current)</span></a>
@@ -156,6 +156,7 @@
 
                   
         <div class="container-fluid">
+        <div class="col-md-8" style="float:left" >
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -164,13 +165,13 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="image/bnr3.jpg" class="d-block w-100 h-50" alt="...">
+                            <img src="image/bnr3.jpg" class="d-block w-200 h-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="image/bnr5.jpg"class="d-block w-100 h-50" alt="...">
+                            <img src="image/bnr5.jpg"class="d-block w-200 h-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="image/bnr6.jpg"class="d-block w-100 h-50" alt="...">
+                            <img src="image/bnr6.jpg"class="d-block w-200 h-100" alt="...">
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -192,17 +193,21 @@
                           </nav>
                       </div>
         </div>
+        
+        </div>
+        <div class="col-md-4" style="float:left;z" >
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">      
         <div class="container-fluid" >
             <div class="w3-animate-zoom">
-            <div class="row" style="padding:50px">
-                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/fried chicken.jpg" class="img-fuild" width="250" height="250" alt=""></button></form></div>
-                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/hfnnc1.jpg" class="img-fuild" width="250" height="250" alt=""></button></form></div>
-                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/bnr4.jpg" class="img-fuild" width="250" height="250" alt=""></button></form></div>
+            <div class="" style="padding:1px">
+                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/fried chicken.jpg" class="img-fuild" width="250" height="200" alt=""></button></form></div>
+                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/hfnnc1.jpg" class="img-fuild" width="250" height="200" alt=""></button></form></div>
+                <div class="col-md-4" style="text-align: center"><form action="menu.html"><button style="float: right;"class="btn btn-white btn-xs"><img src="image/bnr4.jpg" class="img-fuild" width="250" height="200" alt=""></button></form></div>
             </div>
             </div>
             <div id="id01" class="modal">
              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> 
+         </div>
          </div>
          </div>
 
@@ -220,15 +225,20 @@ window.onclick = function(event) {
 
              <div class="row" style="left:0;bottom: 0;">
                 <div class="col-md-12 bg-warning">
-                        Korean Food <br>
-                        16, Jalan Seri Putra 1, 
-                        Bandar Putra, 
-                        81000 Kulai, Johor.<br>
-                        07-660 0628<br>
-                        www.nsit.com.my
-                        <div style="float: right;">
-                          <img src="image/logo.png" alt="" width="10px">
-                      </div>
+                Korean Food 
+                            <div style="float: right;">
+                              <img src="image/logo.png" alt="" width="145px">
+                            </div>
+                            <div class=""style="margin-top: 10px;float: right;">
+               
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1832290874067!2d103.62226601484014!3d1.640389198803813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da79efd691636d%3A0xe27fabf2aa6743dd!2sNSIT+Academy!5e0!3m2!1szh-CN!2smy!4v1564543529462!5m2!1szh-CN!2smy" width="250" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div> 
+                          <br>
+                            16, Jalan Seri Putra 1, 
+                            Bandar Putra, 
+                            81000 Kulai, Johor.<br>
+                            07-660 0628<br>
+                            www.nsit.com.my
                 </div>
               </div>
             </div>

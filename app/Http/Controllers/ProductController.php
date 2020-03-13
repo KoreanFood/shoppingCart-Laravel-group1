@@ -7,10 +7,9 @@ use Illuminate\Http\Request;
 use App\Product; //step1
 use Session;
 
-//use Illuminate\Support\Facades\DB;
-
 class ProductController extends Controller
 {
+    //
     public function create(){
         return view('addProduct');
     }
@@ -30,7 +29,7 @@ class ProductController extends Controller
             'categoryID'=>$r->categoryID,
             'image'=>$imageName
             ]);
-        Session::flash('success','Product insert successfully');
+        Session::flash('success','product insert successfully');
         Return redirect()->route('view.product'); //step 5 back to last page
     }
     public function view(){
@@ -82,7 +81,7 @@ class ProductController extends Controller
         $products->image=$imageName;
         $products->save();
             
-        Session::flash('success','Product insert successfully');
+        Session::flash('success','product insert successfully');
         Return redirect()->route('view.product'); //step 5 back to last page
     }
 }

@@ -19,10 +19,6 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/paywithpaypal', function () {
-    return view('paywithpaypal');
-});
-
 Route::get('/contact_us', function () {
     return view('contact_us');
 });

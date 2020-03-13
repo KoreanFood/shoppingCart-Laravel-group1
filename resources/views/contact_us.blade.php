@@ -80,9 +80,7 @@
                </div>
              </div>
            </form>
-         </div>       <div class="col-md-6" style="margin-top: 10px; text-align: center;">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1832290874067!2d103.62226601484014!3d1.640389198803813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da79efd691636d%3A0xe27fabf2aa6743dd!2sNSIT+Academy!5e0!3m2!1szh-CN!2smy!4v1564543529462!5m2!1szh-CN!2smy" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                    </div>    
+         </div>       
        </div>
      </div>
    </div>

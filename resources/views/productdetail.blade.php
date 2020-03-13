@@ -2,7 +2,7 @@
 @section('content')
 @foreach($products as $product)
                     <div class="row">
-                        <div class="col-md-6"><img src="{{asset('image/')}}/{{$product->image}}" width="50" alt="" class="img-fluid">                        </div>
+                        <div class="col-md-6"><img src="{{asset('image/')}}/{{$product->image}}" width="250" height="200"  alt="" class="img-fluid">                        </div>
                         <div class="col-md-6">
                         <form action="{!! URL::to('paypal') !!}" method="post">
                         {{csrf_field()}}
